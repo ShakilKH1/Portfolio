@@ -1,0 +1,291 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#0a0a0a;
+  color:white;
+  line-height:1.6;
+}
+
+/* NAV */
+header{
+  position:sticky;
+  top:0;
+  background:#0a0a0af5;
+  border-bottom:1px solid #2b2b2b;
+  z-index:999;
+}
+
+nav{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+nav a{
+  color:#ddd;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:80px 20px;
+  border-top:1px solid #222;
+}
+
+h1{font-size:55px;margin:20px 0;}
+h2{color:#f5c451;margin-bottom:30px;font-size:35px;}
+h3{margin-bottom:10px;color:#fff;}
+
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.tag{
+  color:#f5c451;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:13px;
+}
+
+.profile-img{
+  width:100%;
+  border-radius:20px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  background:#f5c451;
+  color:black;
+  padding:12px 22px;
+  border-radius:12px;
+  border:none;
+  cursor:pointer;
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.card{
+  background:#171717;
+  border:1px solid #333;
+  border-radius:18px;
+  padding:25px;
+}
+
+/* EXPERIENCE */
+.timeline{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.exp-card{
+  background:#171717;
+  border:1px solid #333;
+  border-radius:18px;
+  padding:25px;
+}
+
+.exp-card span{
+  display:block;
+  color:#aaa;
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+.exp-card ul{
+  padding-left:20px;
+}
+
+/* PORTFOLIO */
+.portfolio-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:25px;
+}
+
+/* FORCE ALL CARDS SAME SIZE */
+.portfolio-card{
+  background:#171717;
+  border:1px solid #333;
+  border-radius:18px;
+  overflow:hidden;
+  height:320px;              /* 🔥 FIXED BOX HEIGHT */
+  display:flex;
+  flex-direction:column;
+  transition:0.3s ease;
+}
+
+/* hover effect stays */
+.portfolio-card:hover{
+  transform:translateY(-8px);
+}
+
+/* FORCE IMAGE TO NOT STRETCH */
+.portfolio-card img{
+  width:100%;
+  height:180px;             /* 🔥 FIXED IMAGE AREA */
+  object-fit:cover;
+  display:block;
+  flex-shrink:0;
+}
+
+/* TEXT AREA CONTROLLED */
+.portfolio-card h3{
+  padding:15px;
+  margin:0;
+  text-align:center;
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+}
+
+/* CONTACT */
+.contact-wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  align-items:start;   /* 🔥 IMPORTANT: stops stretching */
+}
+
+/* LEFT INFO BOX */
+.contact-info p{
+  margin-bottom:10px;
+}
+
+/* RIGHT FORM */
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* SMALLER, CLEAN INPUTS */
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:10px 12px;
+  background:#111;
+  border:1px solid #333;
+  color:white;
+  border-radius:8px;
+  font-size:14px;
+  margin:0;            /* 🔥 removes extra spacing */
+}
+
+/* textarea control */
+.contact-form textarea{
+  min-height:100px;
+}
+
+/* label spacing fix */
+.contact-form label{
+  font-size:13px;
+  color:#ccc;
+  margin-top:5px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero,
+  .cards,
+  .portfolio-grid,
+  .contact-wrapper{
+    grid-template-columns:1fr;
+  }
+
+  nav{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  h1{
+    font-size:38px;
+  }
+}
+
+@media(max-width:900px){
+  .experience-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:900px){
+  .portfolio-grid{
+    grid-template-columns:repeat(1, 1fr);
+  }
+}
+
+/* EXPERIENCE GRID (same vibe as portfolio) */
+.experience-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+
+/* EXPERIENCE CARDS (interactive like portfolio cards) */
+.exp-card{
+  background:#171717;
+  border:1px solid #333;
+  border-radius:18px;
+  padding:25px;
+  transition:0.3s ease;
+}
+
+/* hover effect like portfolio cards */
+.exp-card:hover{
+  transform:translateY(-8px);
+  border-color:#f5c451;
+}
+
+/* title styling */
+.exp-card h3{
+  margin-bottom:8px;
+  color:#fff;
+}
+
+/* subtitle */
+.exp-card span{
+  display:block;
+  color:#aaa;
+  font-size:14px;
+  margin-bottom:12px;
+}
+
+/* bullet spacing */
+.exp-card ul{
+  padding-left:18px;
+}
+
+.exp-card li{
+  margin-bottom:6px;
+  color:#ddd;
+}

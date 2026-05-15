@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shakil Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <nav aria-label="Main Navigation">
+    <h2>Shakil Portfolio</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="tag">Real Estate • Design • Marketing</p>
+    <h1>Shakil Hassim</h1>
+    <p>
+      I’m a driven and adaptable individual passionate about real estate,
+      digital marketing, design, and creative problem-solving.
+    </p>
+    <a href="#contact" class="btn">Get In Touch</a>
+  </div>
+
+  <img src="profile.jpeg" alt="Shakil Profile Photo" class="profile-img">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+
+  <div class="cards">
+    <article class="card">
+      <h3>Who I Am</h3>
+      <p>
+        Goal-oriented and adaptable individual with experience in digital marketing,
+        real estate, branding, and creative design. I enjoy solving problems and building
+        meaningful client relationships.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Skills</h3>
+      <p>
+        Client relationship management, property consultation, sales strategy, branding,
+        digital marketing campaigns, content creation, UI/UX concepts, graphic design,
+        and web development.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- EXPERIENCE (NEW IMPROVED SECTION) -->
+<section id="experience">
+  <h2>Work Experience</h2>
+
+  <div class="experience-grid">
+
+    <article class="exp-card">
+      <h3>Real Estate Agent</h3>
+      <span>Emil Realtors | Feb 2026 – Present | Colombo, Sri Lanka</span>
+      <ul>
+        <li>Coordinating property listings, client inquiries, and viewings</li>
+        <li>Negotiating deals and maintaining strong client relationships</li>
+        <li>Ensuring smooth and successful property transactions</li>
+      </ul>
+    </article>
+
+    <article class="exp-card">
+      <h3>Digital Marketer & Creator</h3>
+      <span>AJ Media 360 | Dec 2025 – Feb 2026 | Colombo, Sri Lanka</span>
+      <ul>
+        <li>Executed digital marketing strategies across social platforms</li>
+        <li>Created visual and video content for brand growth</li>
+        <li>Worked with analytics to improve campaign performance</li>
+      </ul>
+    </article>
+
+    <article class="exp-card">
+      <h3>Digital Marketing Intern</h3>
+      <span>Hope Digital Global (Pvt) LTD | Mar 2025 – Aug 2025</span>
+      <ul>
+        <li>Managed client accounts including Yamaha School of Music & Arts</li>
+        <li>Created, scheduled, and published digital content</li>
+        <li>Assisted in campaign strategy and reporting</li>
+      </ul>
+    </article>
+
+    <article class="exp-card">
+      <h3>Crew Member</h3>
+      <span>Street Burger</span>
+      <ul>
+        <li>Handled daily restaurant operations and customer service</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<div class="portfolio-grid">
+
+  <div class="portfolio-card">
+    <img src="real-estate.jpg" alt="Real Estate Work">
+    <h3>Real Estate Services</h3>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="uiux.png" alt="UI UX Design">
+    <h3>UI/UX Design</h3>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="graphic-design.png" alt="Graphic Design">
+    <h3>Graphic Design</h3>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="web-projects.png" alt="Web Projects">
+    <h3>Web Projects</h3>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="branding.png" alt="Branding Work">
+    <h3>Branding</h3>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="creative-concepts.png" alt="Creative Concepts">
+    <h3>Creative Concepts</h3>
+  </div>
+
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-wrapper">
+
+    <div class="card contact-info">
+      <p><strong>Email:</strong> shakil.hassim123@gmail.com</p>
+      <p><strong>Phone:</strong> +94 78 516 1922</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/shakilhassim</p>
+    </div>
+
+    <form class="card contact-form">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Message" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
